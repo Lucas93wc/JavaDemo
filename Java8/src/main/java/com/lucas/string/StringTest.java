@@ -7,9 +7,20 @@ package com.lucas.string;
  */
 public class StringTest {
     public static void main(String[] args) {
-
-        test03();
+        test04();
+//        test03();
 //        test02();
+    }
+
+    public static void test04() {
+        String s1 = "2024-06-13 14:09:17.500";
+        System.out.println("原值: "+s1);
+        String newStr = s1.replace("-", "").replace(":", "").replace(".", "").replace(".", "").replace(" ", "");
+        System.out.println(newStr);
+
+        System.out.println("原值: "+s1);
+        String replacedString = s1.replaceAll("[-.: ]", "");
+        System.out.println(replacedString);
     }
 
     public static void test03() {
